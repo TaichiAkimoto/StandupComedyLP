@@ -30,6 +30,9 @@ export default function Footer() {
           <div className="text-sm text-gray-600 mr-4">
             &copy; Taichi Akimoto. All rights reserved.
           </div>
+          <div className="text-sm text-gray-600 mr-4">
+            連絡先: bodhy.akimoto@gmail.com
+          </div>
         </div>
       </div>
     </footer>
