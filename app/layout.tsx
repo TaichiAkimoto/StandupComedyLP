@@ -3,6 +3,7 @@ import "./css/style.css";
 import { Inter } from "next/font/google";
 
 import Header from "@/components/ui/header";
+import { googleTagManagerId } from "@/utils/gtm";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,6 +26,17 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-inter antialiased bg-white text-gray-900 tracking-tight`}
       >
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `
+              <iframe
+                src="https://www.googletagmanager.com/ns.html?id=${googleTagManagerId}"
+                height="0"
+                width="0"
+                style="display:none;visibility:hidden"
+              />`,
+          }}
+        />
         <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
           <Header />
           {children}
