@@ -49,7 +49,7 @@ export default function Hero() {
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
-              Standup
+              Just a
               <p className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
                 Comedy
               </p>
